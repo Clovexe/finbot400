@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    
+	<script src="{% static 'js/index.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/home.css'%}">
+{% endblock %}
+{% block content %}
+ {%include 'navbar.html'%}
+        <div class="wrapper">
+            <h1 >Finbot: Your Financial Buddy</h1>
+            <div class="form" >
+               
+                <div class="child center">
+                    <img src="{% static 'images/home/ask_question_100px.png'%}">
+                    <h2 >Haven't had an Account Yet?</h2>
+                    <div id="head">Click Here to Register Your Account</div>
+                    <button id="button"><a class="hate"href="/sign-up"> Sign In</a></button>
+                </div>
+                <form action="." method="POST">{% csrf_token %}
+                    <div class="center">
+                        <img src="{% static 'images/home/chatbot_70px.png'%}">
+                    </div>
+                    <h1>
+                        Log In
+                    </h1>
+                    <label>Email</label><i class="far fa-question-circle"></i><br>
+                    <input type="email" name="email" placeholder="Email"><br>
+                    <label>Password</label><i class="far fa-question-circle"></i><br>
+                    <input type="password" name="password" placeholder="Password">
+                    <div class="center">
+                        <input type="submit" name="submit" value="Enter">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+{% endblock %}

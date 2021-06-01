@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+    background: #272727;
+    font-family: "Montserrat", sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightgray;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.nav{
+    display: flex;
+    background: #2c2c2c;
+    margin-top: -10px;
+    margin-left: -20px;
+    padding: 0;
+    position: absolute;
+    width: 101%;
+}
+nav a{
+    text-decoration: none;
+    color: lightgray;
+}
+nav a:hover{
+    transition: ease;
+    color: purple;
+}
+.nav div{
+    width: 10%;
+    margin: auto 0;
+    border-right: 1px solid lightgray;
+    text-align: center;
+}
+.nav .logo{
+    width: 80%;
+    border-right: transparent;
+}
+.nav .logo img{
+    float: left;
+    margin-left: 20px;
+}
+.nav img{
+    width: 70px;
+}
+
+.wrapper{
+    width: 100%;
+
+}
+.form{
+    color: #2c2c2c;
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+}
+.form form input[type="text"],.form form input[type="number"],.form form input[type="email"],.form form input[type="password"] {
+   width: 100%;
+   height: 40px;
+}
+.form form textarea{
+    width: 100%;
+    height: 200px;
+}
+.inner{
+    width: 100%;
+    text-align: center;
+}
+.form form .inner input[type="submit"]{
+    border: none;
+    background: #2c2c2c;
+    height: 50px;
+    width: 50%;
+    margin-top: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.form form .inner input[type="submit"]:hover{
+    cursor: pointer;
+}
+.form form ul li{
+    color: red;
+    text-decoration: none;
+    list-style-type: none;
+}

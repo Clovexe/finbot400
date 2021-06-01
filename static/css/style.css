@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Yusei Magic',tahoma, sans-serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+}
+.nav{
+    width: 100%;
+    display: flex;
+    height: 20px;
+    
+}
+.nav div{
+	height: 70px;
+    width: 10%;
+    margin: auto 0;
+    text-align: center;
+}
+.nav .logo{
+    width: 80%;
+    border-right: transparent;
+}
+.nav .logo img{
+    float: left;
+    margin-left: 20px;
+}
+
+.nav img{
+	
+    width: 50px;
+    border-radius: 5px;
+}
+
+body{
+	background:#2c2c2c;
+	padding: 10px;
+}
+body::-webkit-scrollbar,.child1::-webkit-scrollbar,.input::-webkit-scrollbar{
+	width: 4px;
+}
+body::-webkit-scrollbar:hover,.child1::-webkit-scrollbar:hover,.input::-webkit-scrollbar:hover{
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb,.child1::-webkit-scrollbar-thumb,.input::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: rgba(0,0,0,.1);
+}
+body::-webkit-scrollbar-thumb:hover{
+	background: red;
+}
+.headimage{
+	height: 50px;
+}
+.recomwrapper{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	grid-template-columns: 2fr 2fr 1fr 1fr;
+	gap: 30px;
+	margin: 20px 0;
+}
+.remproduct{
+	width: 32%;
+	margin: 5px;
+	border-radius: 20px;
+
+	padding: 10px;
+}
+.remproduct:hover{
+	box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0  rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+	transition: .9s;
+	
+}
+
+.remproduct img{
+	width: 90%;
+	height: 200px;
+	border-radius: 20px;
+}
+.recommendations{
+	background:transparent;
+	height: 80%;
+	width: 100%;
+	border-radius: 20px;
+	margin: 0 auto;
+}
+.wrapper{
+	width: 98%;
+	height: 100vh;
+	position:absolute;
+	/*background: blue;*/
+	
+	display: flex;
+	
+}
+.wrapper h1{
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px;
+}
+
+.child1{
+	width: 60%;
+	/*border: 1px solid red;/**/
+	overflow-y: scroll;
+	height: 100%;
+	padding: 10px;
+	padding-top: 20px;
+	scroll-behavior: smooth;
+	border-right: 2px solid #3f3f3f;
+}
+hr{
+	border: 1px solid#2c2c2c;
+	background-color: #2c2c2c;
+}
+.childinput{
+	width: 100%;
+	height: 70%;
+	margin-top: 20px;
+	text-align: center;
+}
+.child2{
+	padding-top: 20px;
+	width: 40%;
+	/*border: 1px solid red;/**/
+	height: 100%
+}
+.input{
+	margin-top: 20px;
+	height: 90%;
+	padding: 5px;
+
+	background: #555555;
+	/*border: 2px solid blue;/**/
+}
+.investorclass{
+	padding: 10px;
+	border-radius: 20px;
+}
+.investorclass h1{
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.imginfo{
+	height: 100%;
+	margin: 0 auto;
+}
+#chatbox{
+	width: 90%;
+	min-width: 390px;
+	height: 95%;
+	background: #555555;
+	padding: 25px;
+	border-radius: 20px;
+	margin: 0px auto;
+	box-shadow: 0 3px #555555;
+}
+
+#chatlogs{
+	padding: 10px;
+	width: 98%;
+	height: 80%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#chatlogs::-webkit-scrollbar{
+	width: 10px;
+}
+#chatlogs::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: rgba(0,0,0,.1);
+}
+.chat{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin-bottom: 10px;
+
+}
+.chat .user-photo{
+	width: 60px;
+	height: 60px;
+	background: #ccc;
+	border-radius: 50%;
+	
+}
+.chat .user-photo img{
+	width: 100%;
+}
+.chat .chat-message{
+	width:80%;
+	padding: 15px;
+	margin: 5px 10px 0;
+	background: #1ddced;
+	border-radius: 10px;
+	font-size: 18px;
+	word-wrap: break-word;
+	min-height: 40px;
+	max-height: 2000px;
+	color: #fff;
+}
+
+.friend .chat-message{
+	background: #8b008b;
+
+}
+.self .chat-message{
+	background: #0b80a0;
+	order: -1;
+}
+.chat-form{
+	width: 100%;
+}
+.chat-form form{
+	margin-top: 10px;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	
+}
+.chat-form form input[type="text"]{
+	background: #2c2c2c;
+	width: 75%;
+	height: 50px;
+	border: 2px solid #2c2c2c;
+	border-radius: 40px;
+	resize: none;
+	padding: 10px;
+	font-size: 16px;
+	color: #eee;
+}
+.chat-form form input[type="text"]:focus{
+	background: #2c2c2c;
+	outline: #2c2c2c;
+}
+.chat-form form input[type="submit"]{
+	background: #9b6138;
+	padding: 5px 15px;
+	font-size: 30px;
+	color:#fff;
+	border: none;
+	margin: 0 10px;
+	border-radius: 5px;
+	box-shadow: 0 3px 0 #9b6138;;
+	cursor: pointer;
+	
+}
+
+.friend .chat-message img{
+	width: 100%;
+	overflow-x:hidden;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+.friend .chat-message button{
+	margin-top: 20px;
+	width: 90%;
+	text-align: center;
+	margin-left: 5%;
+	height: 30px;
+	color: #800080;
+	font-family: tahoma,sans-serif;
+	background: #9b6138;
+	border: none;
+	border-radius: 20px;
+	font-weight: bold;
+}
+.friend .chat-message button:hover{
+	cursor: pointer;
+}
+.friend .chat-message button a{
+	color:#800080;
+	text-decoration: none;
+}
+.friend .chat-message button a:hover{
+	color:red;
+}
+/**/
+.animatedButton{
+	-webkit-transition: background .2s ease;
+	-moz-transition: background .2s ease;
+	-o-transition: background .2s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp2 {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: hidden;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  	visibility: visible;
+  }
+}
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+.slideInUp2 {
+  -webkit-animation-name: slideInUp2;
+  animation-name: slideInUp2;
+}
+.animated{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.delay{
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+.animated.fast {
+  -webkit-animation-duration: 700ms;
+  animation-duration: 700ms;
+}

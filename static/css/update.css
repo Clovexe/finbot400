@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a5aaad;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3ea175;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5aaad;
+}
+
+body{
+    background: white;
+    font-family: "Montserrat", sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightgray;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+a{
+    font-family: "Montserrat", sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: lightgray;
+}
+.nav{
+    display: flex;
+    background: #2c2c2c;
+    margin-top: -10px;
+    margin-left: -10px;
+    padding: 0;
+    
+    width: 101%;
+    height: 80px;
+}
+
+.nav div{
+    height: 70px;
+    width: 10%;
+    margin: auto 0;
+    text-align: center;
+}
+.nav .logo{
+    width: 80%;
+    border-right: transparent;
+}
+.nav .logo img{
+    float: left;
+    margin-left: 20px;
+}
+
+.nav img{
+    padding-top: 13px;
+    width: 40px;
+    
+}
+.nav .logo img{
+    padding-top: 10px;
+    width: 50px;
+    padding-left: 20px;
+    border-right: transparent;
+}
+.nonogo:hover{
+    transition-duration: .3s;
+    border-bottom: 3px solid #4000ff;
+}
+.wrapper{
+
+   width: 100%;
+   height: 100vh;
+
+   display: flex;
+}
+.inside{
+    width: 80%;
+    padding: 50px;
+    color: #2c2c2c;
+    display:flex;
+    overflow-y: scroll;
+}
+.inside div{
+    width: 50%;
+}
+.panel{
+    width: 20%;
+    margin-left: -10px;
+    background: #2c2c2c;
+    padding: 10px;
+}
+.panel div{
+    padding: 10px;
+}
+.inside img{
+    height: 70%;
+ 
+}
+
+#update_panel img, #password_panel img{
+    margin-top: 100px;
+    margin-left: 150px;
+    fill: purple;
+    height: 50%;
+   
+}
+
+.panel div:hover{
+    cursor: pointer;
+}
+.active{
+    background: #4000ff;
+    border-radius: 10px;
+}
+.hidden{
+    display: none;
+}
+
+form input{
+    width: 95%;
+    height: 30px;
+}
+label:after{
+    content: "\a";
+    white-space: pre;
+}
+textarea{
+    width: 95%
+
+}
+form input[type="submit"]{
+    font-family: "Montserrat", Consolas;
+    font-weight: bold;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background: #4000ff;
+    border-radius: 10px;
+}
+form input[type="submit"]:hover{
+    cursor: pointer;
+}

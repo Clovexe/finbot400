@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+    background: #2c2c2c;
+    font-family: "Montserrat", sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightgray;
+}
+nav a{
+    text-decoration: none;
+    color: lightgray;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    
+}
+.nav div{
+    width: 10%;
+    margin: auto 0;
+    border-right: 1px solid lightgray;
+    text-align: center;
+}
+.nav .logo{
+    width: 80%;
+    border-right: transparent;
+}
+.nav .logo img{
+    float: left;
+    margin-left: 20px;
+}
+.nav img{
+    width: 70px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
+.wrapper h1{
+    margin-top: 5%;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.form{
+    margin:0 auto;
+    width: 70%;
+    background:whitesmoke;
+    height: 70%;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+}
+.center{
+    text-align: center;
+    
+}
+
+.form form{
+    color:black;
+    width: 50%;
+}
+
+.form form input[type="email"], .form form input[type="password"]{
+    width: 98%;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form form input[type="submit"]{
+    width: 30%;
+    height: 45px;
+    background: #24a0ed;
+    border:none;
+    border-radius: 10px;
+    color: whitesmoke;
+  
+    font-family: "Yusei Magic", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.child{
+    width: 50%;
+}
+.child img{
+    margin-top: 10%;
+}
+.child button{
+    margin-top: 20px;
+    width: 35%;
+    height: 50px;
+    border: 4px solid lightgray;
+    font-weight: bold;
+    border-radius: 20px;
+    background: transparent;
+}
+.child button a{
+    text-decoration: none;
+    color: lightgray;
+}
+.nav div:hover, input[type="submit"]:hover{
+    cursor: pointer;
+}
+.nav div:hover{
+    transition: ease;
+    color: purple;
+}
+
+nav a:hover{
+    transition: ease;
+    color: purple;
+}
+
+button:hover{
+    cursor: pointer;
+    transition-duration: .7s;
+    border: 4px solid grey;
+    color: grey;
+}
+#button:hover ~ #head{
+    color: black;
+}
+button:hover > .hate{
+    color: grey;
+}

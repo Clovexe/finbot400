@@ -1,0 +1,543 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is tim", "what is your age", "how old are you", "age?"],
+         "responses": ["I don't exactly know but maybe a month or two?", "I think I was born yesterday..."],
+         "context_set": ""
+        },
+        {"tag": "status",
+         "patterns": ["can i be your friend?", "are you trustworthy?", "Can I trust you?", "are you a friend?", "Are you an enemy?"],
+         "responses": ["Of course I am a friend with free investment logic", "I am not an enemy :( , I am just a lonely bot with investment facts to share...."],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?", "who are you?", "you are?", "what can i call you"],
+         "responses": ["You can call me Finbot.", "I'm Finbot!", "I'm Finbot your personal investment Companion.","Sup, Yowz! It's ya boii Finboot! Here to help you with investment with faccs"],
+         "context_set": ""
+        },
+        {"tag": "shop",
+         "patterns": ["Id like to buy something", "whats on the menu", "what do you reccommend?", "could i get something to eat", "what do you sell"],
+         "responses": ["We sell chocolate chip cookies for $2! But investment facts was more important and free! Just Type in where can i start if you want to know things", "Investment facts are on the menu! Just Type in where can i start if you want to know things"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["when are you guys open", "what are your hours", "hours of operation"],
+         "responses": ["I am always available when you need me, I am alone you I hope you could talk to me as much as you can","I am always here for you"],
+         "context_set": ""
+        },
+        {"tag": "price_cookies",
+         "patterns": ["How much are facts", "How much are the facts", "how much are you selling facts", "how much do you sell cookies"],
+         "responses": ["Facts are free!", "It is free facts but the cookies are not for sale because it is for me"],
+         "context_set": ""
+        },
+        {"tag": "try_to_describe_again",
+         "patterns": ["describe that company"],
+         "responses": ["Whahahahahahahaha! I am very sorry! I should have been more clear! What I mean is you should type the keyword <br>'Describe' and then type the name of the company for example  Describe Jollibe etc <br> to know the list of the companies just type <b>'List of Companies'</b>"],
+         "context_set": ""
+        },
+        {"tag": "Assesment_Test",
+         "patterns": ["I want to take Exam","i want to take exam","want to take exam"],
+         "responses": ["Woah! that's the spirit!!!! <br> <a href='test'>Test Here</a>"],
+         "context_set": ""
+        },
+        {"tag": "Investing_def",
+         "patterns": ["what is investing?","what is this Investing","what the hell is this investing?"],
+         "responses": ["Investing is a way to set aside money while you are busy with life and have that money work for you so that you can fully reap the rewards of your labor in the future.<br>It is like putting your money on something while that something works to grow that money"],
+         "context_set": ""
+        },
+        {"tag": "Banks_AsiaUnitedBank_Desc",
+        "patterns": ["Describe AUB", "Please describe the aub", "Please describe the Asia United Bank Corporation"],
+        "responses": ["symbol: AUB <br> date:01/20/2021 <br> open:44.0000 <br> high:44.0000 <br> low:44.0000 <br> close:44.0000 <br> bid:43.9000 <br> ask:44.0000 <br> volume:7000 <br> value:308 000.0000 <br> netForeign:308 000.0000"],
+        "context_set": ""
+        },
+        {"tag": "Banks_BDOUnibank_Desc",
+        "patterns": ["Describe BDO", "Please describe the bdo", "Please describe the Banco de Oro Unibank Company"],
+        "responses": ["symbol: BDO  <br> date: 01/20/2021  <br> open:110.0000 <br> high:111.0000 <br> low:108.8000 <br> close:111.0000 <br> bid:110.0000 <br> ask:111.0000 <br> volume:1 808 470.000 <br> value:199 339 976.0000  <br> netForeign:9 760 592.0000"],
+        "context_set": ""
+        },
+        {"tag": "Banks_BankPHIslands_Desc",
+        "patterns": ["Describe BPI", "Please describe the bpi", "Please describe the Bank of The Philippine Islands"],
+        "responses": ["symbol BPI <br> date: 01/20/2021 <br> open:84.0000 <br> high:84.0000 <br> low:82.5.8000 <br>  close:83.2000 <br>  bid:826.0000 <br>  ask:83.2000 <br>  volume:1 346 550.000 <br>  value:112 181 288.0000  <br>  netForeign:29 716 783.5000"],
+        "context_set": ""
+        },
+        {
+            "tag": "Banks_Chinabank_Desc",
+            "patterns": ["Describe CHIB", "Please describe the Chinabank", "Please describe the China Banking Corporation"],
+            "responses":    
+            ["symbol: CHIB, <br> date: 01/20/2021, <br> open:25.0000, <br> high:25.0500, <br> low:24.9000, <br> close:25.0000, <br> bid:24.9500, <br> ask:25.0000, <br> volume:338,200.0000, <br> value:8,447,010.0000, <br> netForeign:571,330.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_CitystateBank_Desc",
+            "patterns": ["Describe CSB", "Please describe the csb", "Please describe the Citystate Savings Bank"],
+            "responses": ["symbol: CSB , <br> date: 01/20/2021, <br> open:110.0000, <br> high:111.0000, <br> low:108.8000, <br> close:111.0000, <br> bid:110.0000, <br> ask:111.0000, <br> volume:1,808,470.000, <br> value:199,339,976.0000, <br> netForeign:9,760,592.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_EastwestBank_Desc",
+            "patterns": ["Describe EW", "Please describe the EW", "Please describe the East West Banking Corporation"],
+            "responses":    
+            ["symbol: EW , <br> date: 01/20/2021 , <br> open:10.2600, <br> high:10.3000, <br> low:10.2000, <br> close:10.2800, <br> bid:10.2600, <br> ask:10.2600, <br> volume:480,600.000, <br> value:4,923,468.0000, <br> netForeign:2,005,090.0000"], 
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_Metrobank_Desc",
+            "patterns": ["Describe MBT", "Please describe the mbt", "Please describe the Metropolitan Bank and Trust Company"],
+            "responses":    
+                ["symbol: MBT , <br> date: 01/20/2021, <br> open:48.0500, <br> high:48.2000, <br> low:46.4000, <br> close:47.0000, <br> bid:47.0000, <br> ask:47.1000, <br> volume:3,730,800.000, <br> value:176,615,310.0000, <br> netForeign:65,481,175.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_PHBusinessBank_Desc",
+            "patterns": ["Describe PBB", "Please describe the pbb", "Please describe the Philippine Business Bank"],
+            "responses":    
+                ["symbol: PBB , <br> date: 01/20/2021 , <br> open:11.4800, <br> high:11.4800, <br> low:11.4000, <br> close:11.4000, <br> bid:11.3600, <br> ask:11.4000, <br> volume:300.000, <br> value:3,428.0000, <br> netForeign:" ],
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_PHBankOfCommunications_Desc",
+            "patterns": ["Describe PBC", "Please describe the pbc", "Please describe the Philippine Bank of Communications"],
+            "responses":    
+                ["symbol: PBC , <br> date: 01/20/2021, <br> open:23.0000, <br> high:23.0000, <br> low:22.5000, <br> close:22.5000, <br> bid:22.6000, <br> ask:23.0000, <br> volume:31,600.000, <br> value:726,550.0000, <br> netForeign:713,000.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_PHNationalBank_Desc",
+            "patterns": ["Describe PNB", "Please describe the pnb", "Please describe the Phlippine National Bank"],
+            "responses":    
+                ["symbol: PNB , <br> date: 01/20/2021 , <br> open:27.8000, <br> high:27.9.0000, <br> low:27.7000, <br> close:27.7000, <br> bid:27.2500, <br> ask:27.7000, <br> volume:308,400.000, <br> value:8,502,415.0000, <br> netForeign:285,290.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_PHSavingsBank_Desc",
+            "patterns": ["Describe PSB", "Please describe the psb", "Please describe the Philippine Savings Bank"],
+            "responses":    
+                ["symbol: PSB, <br> date: 01/20/2021, <br> open:55.7000, <br> high:55.8000, <br> low:55.6000, <br> close:55.8000, <br> bid:55.7000, <br> ask:55.8000, <br> volume:230.000, <br> value:12,795.0000, <br> netForeign: "],
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_RCBC_Desc",
+            "patterns": ["Describe RCB", "Please describe the rcb", "Please describe the Rizal Commercial Banking Corporation"],
+            "responses":    
+                ["symbol: RCB , <br> date: 01/20/2021 , <br> open:18.8000, <br> high:19.0000, <br> low:18.7000, <br> close:18.7800, <br> bid:18.7800, <br> ask:18.8000, <br> volume:122,200.000, <br> value:2,299,910.0000, <br> netForeign:1,048,366.0000"],
+             "context_set":""
+        },
+        {
+            "tag": "Banks_SecurityBank_Desc",
+            "patterns": ["Describe SECB", "Please describe the secb", "Please describe the Security Bank Corporation"],
+            "responses":    
+                ["symbol: SECB , <br> date: 01/20/2021, <br> open:135.4000, <br> high:136.0000, <br> low:133.0000, <br> close:136.0000, <br> bid:133.8000, <br> ask:136.0000, <br> volume:167,190.000, <br> value:22,431,645.0000, <br> netForeign:8,258,034.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "Banks_UnionBank_Desc",
+            "patterns": ["Describe UBP", "Please describe the ubp", "Please describe the Union Bank of the Philippines"],
+            "responses": ["symbol: UBP , <br> date: 01/20/2021, <br> open:71.0000, <br> high:71.1000, <br> low:70.3000, <br> close:70.4000, <br> bid:70.400, <br> ask:70.5000, <br> volume:12,580.000, <br> value:892,813.0000, <br> netForeign: "],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_BrightKindle_Desc",
+            "patterns": ["Describe BKR", "Please describe the bkr", "Please describe the Bright Kindle Resources and Investments Incorporated"],
+            "responses":    
+                ["symbol: BKR , <br> date: 01/20/2021, <br> open:1.0000, <br> high:1.0200, <br> low:1.0000, <br> close:1.0000, <br> bid:0.9600, <br> ask:1.0000, <br> volume:372,000.000, <br> value:377,880.0000, <br> netForeign:20,400.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_COLFinancial_Desc",
+            "patterns": ["Describe COL", "Please describe the col", "Please describe the COL Financial Group"],
+            "responses":    
+                ["symbol: COL , <br> date: 01/20/2021, <br> open:4.0000, <br> high:4.0000, <br> low:3.8200, <br> close:4.0000, <br> bid:4.0000, <br> ask:4.0200, <br> volume:1,587,000.000, <br> value:6,253,200.0000, <br> netForeign:1,594,330.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_FerronouxHoldings_Desc",
+            "patterns": ["Describe FERRO", "Please describe the ferro", "Please describe the Ferronoux Holdings"],
+            "responses":    
+                ["symbol: FERRO , <br> date:01/20/2021, <br> open:5.0000, <br> high:6.1000, <br> low:4.5000, <br> close:5.0900, <br> bid:4.9000, <br> ask:5.0900, <br> volume:8,319,000.000, <br> value:43,665,150.0000, <br> netForeign:501,559.9996"],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_FilipinoFund_Desc",
+            "patterns": ["Describe FFI", "Please describe the ffi", "Please describe the Filipino Fund Incorporated"],
+            "responses":    
+                ["symbol: FFI , <br> date:01/20/2021, <br> open:6.9800, <br> high:6.9800, <br> low:6.9800, <br> close:6.9800, <br> bid:6.98.7800, <br> ask:7.2500, <br> volume:100.0000, <br> value:698.0000, <br> netForeign: "],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_IRemit_Desc",
+            "patterns": ["Describe AUB", "Please describe the i", "Please describe the I-Remit Incorporated"],
+            "responses":    
+                ["symbol: I , <br> date: 01/20/2021 , <br> open:1.6600, <br> high:1.6700, <br> low:1.6200, <br> close:1.6200, <br> bid:1.6100, <br> ask:1.6500, <br> volume:364,000.000, <br> value:591,020.0000, <br> netForeign: "],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_MedcoHoldings_Desc",
+            "patterns": ["Describe MED", "Please describe the med", "Please describe the Medco Holdings Incorporated"],
+            "responses":    
+                ["symbol: MED , <br> date: 01/20/2021 , <br> open:0.5000, <br> high:0.5100, <br> low:0.4400, <br> close:0.4500, <br> bid:0.4500, <br> ask:0.4650, <br> volume:4,060.000, <br> value:1,914,350.0000, <br> netForeign:44,750.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_NationalReinsurance_Desc",
+            "patterns": ["Describe NRCP", "Please describe the nrcp", "Please describe the National Reinsurance Corporation of the Philippines"],
+            "responses":    
+                ["symbol: NRCP , <br> date: 01/20/2021, <br> open:0.8400, <br> high:0.9000, <br> low:0.8000, <br> close:0.8900, <br> bid:0.8400, <br> ask:0.8900, <br> volume:2,396,000.000, <br> value:2,100,140.0000, <br> netForeign:61,600.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_PHStockExchange_Desc",
+            "patterns": ["Describe PSE", "Please describe the pse", "Please describe the Philippine Stock Exchange Incorporated"],
+            "responses":    
+                ["symbol: PSE , <br> date: 01/20/2021 , <br> open:153.0000, <br> high:154.0000, <br> low:152.5000, <br> close:153.5000, <br> bid:153.5000, <br> ask:154.0000, <br> volume:13,580.0000, <br> value:2,086,739.0000, <br> netForeign:465,086.0000"],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_Sunlife_Desc",
+            "patterns": ["Describe SLF", "Please describe the slf", "Please describe the Sunlife Financial Incorporated"],
+            "responses":    
+                ["symbol: SLF , <br> date: 01/20/2021, <br> open:2188.0000, <br> high:2188.0000, <br> low:2188.0000, <br> close:2188.0000, <br> bid:2188.0000, <br> ask:2200.0000, <br> volume:10.0000, <br> value:21,880.0000, <br> netForeign: "],
+             "context_set": ""
+        },
+        {
+            "tag": "OFI_Vantage_Desc",
+            "patterns": ["Describe V", "Please describe the v", "Please describe the Vantage International"],
+            "responses":   ["symbol: V , <br> date: 01/20/2021, <br> open:1.0900, <br> high:1.1000, <br> low:1.0600, <br> close:1.0600, <br> bid:1.0600, <br> ask:1.0900, <br> volume:106,000.000, <br> value:114,780.0000, <br> netForeign: "],
+             "context_set": ""
+        },
+        {
+            "tag": "BlueChip_Jollibee_Desc",
+            "patterns": ["Describe JFC", "Please describe the jfc", "Please describe the Jollibee Foods Corporation"],
+            "responses":    
+            ["symbol: JFC, <br> date: 01/20/2021, <br> open:195.5000, <br> high:196.3000, <br> low:194.1000, <br> close:194.1000, <br> bid:194.1000, <br> ask:194.2000, <br> volume:870,670.0000, <br> value:80,285,436.0000, <br> netForeign:571,330.0000"],
+             "context_set": ""
+        },
+    {    
+        "tag": "Companies to know",
+        "patterns": ["What are the companies to know?","What are companies available?","List of companies","List of companies please"],
+        "responses":["Here are the companies to know: Just Enter: <br> 1)Asia United Bank <br>2)BDO Unibank  <br>3)Jollibee <br>4)Vantage International <br>5)Sunlife Financial Incorporated<br>6)Philippine Stock Exchange Incorporated<br>7)National Reinsurance Corporation of the Philippines <br>8)Medco Holdings Incorporated<br>9)Filipino Fund Incorporated<br>10)I-Remit Incorporated<br>11)WFerronoux Holding<br>12)Bright Kindle Resources and Investments Incorporated<br>13)COL Financial Group<br>14)Security Bank Corporation15)East West Banking Corporation<br>16)Rizal Commercial Banking Corporation<br>17)Philippine Savings Bank"],
+        "context_set":""
+    },   
+    {    
+        "tag": "Terms_to_learn",
+        "patterns": ["Where can I start?","where to start?","List to learn","What to learn", "What are the terms to know?", "what should I know?"],
+        "responses":["Here are the terms and definitions that you need to understand: Just Enter: <br> 1)What is Stock <br>2)What is Stock Symbol  <br>3)What are Types of Stock According to Sector <br>4)What are the Types of Stock According to Market Capitalization <br>5)What is Broker<br>6)What is Exchange<br>7)What is Day Trading <br>8)What is Sector<br>9)What is Volatility<br>10)What is Ask <br>11)What is Bid<br>12)What is Close<br>13)What is Open<br>14)What is Volume<br>15)What is Value<br>16)What is Net foreign assets (NFA) <br>17)What is Spread<br>18)What is Yield <br>19)What is Dividend<br>20)What is Portfolio <br>21)What is Blue Chip Stocks <br>22)What is Bear Market <br>23)What is Bull Market <br>24)What is High<br>25) Low<br>26)What is Order <br>27)What is Execution<br>28)What is Averaging Up <br>29)What is Averaging Down <br>30)What is Arbitrage<br>31)What is Annual Report <br>32)What is Beta <br>33)What is Initial Public Offering (IPO) <br>34)What is Haircut <br>35)What is Index <br>36)What is Leverage <br>37)What is Margin<br>38) What is Moving Average <br>39)What is Quote <br>40)What is Rally<br>41)What is Share Market <br>42)What is Pink Sheet Trading <br>43)What is Short Selling <br>"],
+        "context_set":""
+    },
+    {
+        "tag": "Definition_Stock_Desc",
+        "patterns": ["What is Stock", "Please define stocks", "Please describe What is a Stock"],
+        "responses":    
+        ["A Stock is an ownership in a company which can be traded in an exchange"],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_StockSym_Desc",
+        "patterns": ["What is Stock Symbol", "Please define stock symbol", "Please describe What is a Stock Symbol"],
+        "responses":    
+        ["A one- to four-character alphabetic root symbol that represents a publicly traded company on a stock exchange. Apple’s stock symbol is AAPL, while Walmart’s is WMT"],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_SectorStock_Desc",
+        "patterns": ["What are the types of Stock according to Sector"],
+        "responses":    
+        ["The Types of Stock According to Sector are: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, IT, Telecommunication, Utilities, Real Estate"],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_MarketCapStock_Desc",
+        "patterns": ["What are the types of Stocks according to market capitalization"],
+        "responses":    
+        [" The types of Stock according to Market Capitalization are: Mega ($300 Billion+), Large ($10 Billion+), Mid ($2 Billion - $10 Billion), Small ($300 Million – $2 Billion), Micro ($50 Million - $300 Million), Nano (Below $50 Million)"],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Broker_Desc",
+        "patterns": ["What is a Broker", "Please define brokers", "Please describe What is a Broker"],
+        "responses":    
+        ["A broker is a person who buys or sells an investment for you in exchange for a fee (a commission)."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Exchange_Desc",
+        "patterns": ["What is an Exchange", "Please define exchange", "Please describe What is an Exchange"],
+        "responses":    
+        ["An exchange is a place in which different investments are traded such as the PSE (Philippine Stock Exchange)."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_DayTrading_Desc",
+        "patterns": ["What is Day Trading", "Please define day trading", "Please describe What is day trading"],
+        "responses":    
+        ["The practice of buying and selling within the same trading day, before the close of the markets on that day."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Sector_Desc",
+        "patterns": ["What is a Sector", "Please define sector", "Please describe What is a Sector"],
+        "responses":    
+        ["A group of stocks that are in the same industry belong to the same sector. An example would be the technology sector, which includes companies like Apple and Microsoft. "],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Volatility_Desc",
+        "patterns": ["What is Volatility", "Please define Volatility", "Please describe What is a Volatility"],
+        "responses":["The price movements of a stock or the stock market as a whole. Highly volatile stocks are those with extreme daily up and down movements and wide intraday trading ranges. "],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Ask_Desc",
+        "patterns": ["What is Ask", "Please define ask", "Please describe What is Ask"],
+        "responses":    
+        ["Also called offer price, offer, asking price, or simply ask, is the amount of money a seller states they will accept."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Bid_Desc",
+        "patterns": ["What is Bid", "Please define bid", "Please describe What is a Bid"],
+        "responses":    
+        ["The bid is the amount of money a trader is willing to pay per share for a given stock. "],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Close_Desc",
+        "patterns": ["What is Close", "Please define close", "Please describe What is a Close"],
+        "responses":    
+        ["Refers to the time at which a stock exchange closes to trading."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Open_Desc",
+        "patterns": ["What is Open", "Please define open", "Please describe What is an open"],
+        "responses":    
+        ["Refers to the time at which people can begin trading on a particular exchange."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Volume_Desc",
+        "patterns": ["What is Volume", "Please define Volume", "Please describe What is Volume"],
+        "responses":    
+        ["The number of shares of stock traded during a particular time period, normally measured in average daily trading volume. Volume can also mean the number of shares you purchase of a given stock. "],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Value_Desc",
+        "patterns": ["What is Value", "Please define Value", "Please describe What is Value"],
+        "responses":    
+        ["A stock's actual value is whatever someone is willing to pay. While fundamental factors influence stock prices over the long term, supply and demand rule stock prices in the short term."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_NetForeign_Desc",
+        "patterns": ["What is Net Foreign", "Please define Net Foreign", "Please describe What is Net Foreign"],
+        "responses":    
+        [" Refer to the value of overseas assets owned by a nation, minus the value of its domestic assets that are owned by foreigners, adjusted for changes in valuation and exchange rates."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Spread_Desc",
+        "patterns": ["What is Spread", "Please define Spread", "Please describe What is Spread"],
+        "responses":    
+        ["This is the difference between the bid and the ask prices of a stock, or the amount for which someone is willing to buy it and the amount for which someone is willing to sell it. For instance, if a trader is willing to trade XYZ stock for $10 and a buyer is willing to pay $9 for it, the spread is $1."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Yield_Desc",
+        "patterns": ["What is Yield", "Please define Yield", "Please describe What is Yield"],
+        "responses":    
+        ["Often refers to the measure of the return on an investment that is received from the payment of a dividend. This is determined by dividing the annual dividend amount by the price paid for the stock. If you bought stock XYZ for $40 per share and it pays a $1.00-per-year dividend, you have a 'yield' of 2.5 percent"],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Dividend_Desc",
+        "patterns": ["What is a Dividend", "Please define dividend", "Please describe What is Dividend"],
+        "responses":    
+        ["A portion of a company’s earnings that is paid to shareholders, or people that own that company’s stock, on a quarterly or annual basis."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Portfolio_Desc",
+        "patterns": ["What is a Portfolio", "Please define Portfolio", "Please describe What is a Portfolio"],
+        "responses":    
+        ["A collection of investments owned by an investor makes up his or her portfolio. You can have as few as one stock in a portfolio, but you can also own an infinite amount of stocks or other securities."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_BlueChip_Desc",
+        "patterns": ["What are Blue Chip Stocks", "Please define Blue Chip Stocks", "Please describe What are Blue Chip Stocks"],
+        "responses":    
+        ["The stocks behind large, industry-leading companies. Blue chip stocks offer a stable record of significant dividend payments and have a reputation of sound fiscal management. "],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Bear_Desc",
+        "patterns": ["What is a Bearish Market", "Please define bearish market", "Please describe What is a bearish market"],
+        "responses":    
+        ["Trading talk for the stock market being in a downward trend, or a period of falling stock prices. This is the opposite of a bull market. If a stock price plummets, it’s very bearish."],
+         "context_set": ""
+    },
+    {
+        "tag": "Definition_Bull_Desc",
+        "patterns": ["What is a Bullish Market", "Please define bullish market", "Please describe What is Bullish Market"],
+        "responses":    
+        ["When the stock market as a whole is in a prolonged period of increasing stock prices. It’s the opposite of a bear market. "],
+         "context_set": ""
+    },
+    {
+    "tag": "Definition_High_Desc",
+    "patterns": ["What is a High", "Please define High", "Please describe What is High"],
+    "responses":    
+    ["Refers to a market milestone in which a stock or index reaches a greater price point than previously. "],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Low_Desc",
+    "patterns": ["What is a Low", "Please define low", "Please describe What is Low"],
+    "responses":    
+    ["Low is the opposite of high. It represents a lower price point for a stock or index."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Order_Desc",
+    "patterns": ["What is an Order", "Please define Order", "Please describe What is Order"],
+    "responses":    
+    ["An investor’s bid to buy or sell a certain amount of stock or option contracts constitutes an order. You have to put an order in to buy or sell 100 shares of stock, for instance."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Execution_Desc",
+    "patterns": ["What is an Execution", "Please define Execution", "Please describe What is Execution"],
+    "responses":    
+    ["When an order to buy or sell has been completed, the trader has executed the transaction. If you put in an order to sell 100 shares, this means that all 100 shares have been sold."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_AveUp_Desc",
+    "patterns": ["What is Averaging Up", "Please define averaging up", "Please describe What is Averaging Up"],
+    "responses":    
+    ["Refers to the process of buying additional shares of a stock you already own, but at a higher price. This raises the average price that the investor pays for all the shares."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_AveDown_Desc",
+    "patterns": ["What is Averaging Down", "Please define averaging down", "Please describe What is averaging down"],
+    "responses":    
+    ["When an investor buys more of a stock as the price goes down."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Arbitrage_Desc",
+    "patterns": ["What is Arbitrage", "Please define Arbitrage", "Please describe What is Arbitrage"],
+    "responses":    
+    ["buying and selling the same security on different markets and at different price points."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_AnnReport_Desc",
+    "patterns": ["What is Annual Report", "Please define Annual Report", "Please describe What is Annual Report"],
+    "responses":    
+    ["A report prepared by a company that’s intended to impress shareholders. It contains tons of information about the company, from its cash flow to its management strategy."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Beta_Desc",
+    "patterns": ["What is Beta", "Please define Beta", "Please describe What is Beta"],
+    "responses":    
+    ["A measurement of the relationship between the price of a stock and the movement of the whole market. If stock XYZ has a beta of 1.5, that means that for every 1 point move in the market, stock XYZ moves 1.5 points, and vice versa."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_IPO_Desc",
+    "patterns": ["What is IPO", "Please define IPO", "Please describe What is IPO"],
+    "responses":    
+    ["An Initial Public Offering(IPO) is the first sale or offering of a stock by a company to the public. It happens when a company decides to go public rather than remain solely owned by private or inside investors. "],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Haircut_Desc",
+    "patterns": ["What is a Haircut", "Please define haircut", "Please describe What is haircut"],
+    "responses":    
+    ["a term for an extremely thin spread between the bid and ask prices of a given stock. It can also refer to a situation in which a stock price gets reduced by a specific percentage for margin trades or other purposes."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Index_Desc",
+    "patterns": ["What is an Index", "Please define Index", "Please describe What is Index"],
+    "responses":    
+    ["A benchmark that is used as a reference marker for traders and portfolio managers. "],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Leverage_Desc",
+    "patterns": ["What is Leverage", "Please define leverage", "Please describe What is Leverage"],
+    "responses":    
+    ["When you use leverage, you borrow shares in a stock from your broker with the goal of increasing your profit. If you borrow shares and sell them all at a higher price point, you return the shares and keep the difference. "],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Margin_Desc",
+    "patterns": ["What is Margin", "Please define Margin", "Please describe What is Margin"],
+    "responses":    
+    ["A margin account lets a person borrow money (take out a loan, essentially) from a broker to purchase an investment. The difference between the amount of the loan and the price of the securities is called the margin. "],
+     "context_set": ""
+},
+{
+    "tag": "Definition_MovAve_Desc",
+    "patterns": ["What is a Moving Average", "Please define Moving Average", "Please describe What is Moving Average"],
+    "responses":    
+    ["A stock’s average price-per-share during a specific period of time is called its moving average. Some common time frames to study in terms of a stock’s moving average include 50- and 200-day moving averages."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Quote_Desc",
+    "patterns": ["What is a Quote", "Please define Quote", "Please describe What is Quote"],
+    "responses":    
+    ["Information on a stock’s latest trading price tells you its quote. This is sometimes delayed by 20 minutes unless you’re using an actual broker trading platform."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_Rally_Desc",
+    "patterns": ["What is Rally", "Please define rally", "Please describe What is rally"],
+    "responses":    
+    ["A rapid increase in the general price level of the market or of the price of a stock is known as a rally."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_ShareMarket_Desc",
+    "patterns": ["What is a Share Market", "Please define Share Market", "Please describe What is Share Market"],
+    "responses":    
+    ["Any market in which shares of a particular company are bought and sold. The stock market is an example — and probably the most significant example — of a share market."],
+     "context_set": ""
+},
+{
+    "tag": "Definition_PSTrading_Desc",
+    "patterns": ["What is Pink Sheet Trading", "Please define Pink Sheet Trading", "Please describe What is Pink Sheet Trading"],
+    "responses":    
+    ["The term 'pink sheets' refers most commonly to penny stocks, which are traded at $5 per share or less. They’re also called over-the-counter stocks because that’s how they are traded. "],
+     "context_set": ""
+},
+{
+    "tag": "Definition_ShortSelling_Desc",
+    "patterns": ["What is Short Selling", "Please define Short Selling", "Please describe What is Short Selling"],
+    "responses":    
+    ["When you short-sell a stock, you borrow shares from someone else with the promise to return them at a point down the road. You then sell the stock for a profit. It’s a way to take advantage of a stock that you believe will decrease in price. After you sell short, you can buy back the shares at the lower price point and take the difference in price as your profit."],
+     "context_set": ""
+},{
+    "tag": "Definition_Risk_assessment",
+    "patterns": ["What is Risk Assesment Test", "Please define Risk Assesment Test", "Please describe What is Risk Assesment Test", "what is risk test"],
+    "responses":    
+    ["Simply put, it is a test that measureas your confidence or readiness for investing. Through this test, one can be classified as an aggressive investor or a conservative one. You can actually try the this by simply typing <b>I want to take exam</b>"],
+     "context_set": ""
+}
+
+   ]
+}

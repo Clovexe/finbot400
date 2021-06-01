@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+<title>Risk Assessment Test|Finbot</title>
+<script src="{% static 'js/text.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+
+{% endblock %}
+{% block content %}
+	<div id="quiz">
+			<div class="header">
+				<h1>Risk Assessment Test: </h1>
+			</div>
+			<div class="group_question">
+				<p>1. In general, how would your bestfriend describe you as a risk taker?</p>
+				<p><input type="radio" name="question1" id="q1_1" value="A real gambler" >A real gambler</p>
+				<p><input type="radio" name="question1" id="q1_2" value="Willing to take risks after completing adequate research">Willing to take risks after completing adequate research</p>
+				<p><input type="radio" name="question1" id="q1_3" value="Cautious">Cautious</p>
+				<p><input type="radio" name="question1" id="q1_4" value="A real risk avoider">A real risk avoider</p>
+			</div> 
+			<div class="group_question">
+				<p>2. You are on a TV game show and can choose one of the following. Which would you take?</p>
+				<p><input type="radio" name="question2" id="q2_1" value="$1,000 in cash">$1,000 in cash</p>
+				<p><input type="radio" name="question2" id="q2_2" value="A 50% chance at winning $5,000">A 50% chance at winning $5,000</p>
+				<p><input type="radio" name="question2" id="q2_3" value="A 25% chance at winning $10,000">A 25% chance at winning $10,000</p>
+				<p><input type="radio" name="question2" id="q2_4" value="A 5% chance at winning $100,000">A 5% chance at winning $100,000</p>
+			</div> 
+			<div class="group_question">
+				<p>3. You have just finished saving for a "once-in-a-lifetime" vacation. Three weeks before you plan to leave, you lose your job. You would:</p>
+				<p><input type="radio" name="question3" id="q3_1" value="Cancel the vacation">Cancel the vacation</p>
+				<p><input type="radio" name="question3" id="q3_2" value="Take a much more modest vacation">Take a much more modest vacation</p>
+				<p><input type="radio" name="question3" id="q3_3" value="Go as scheduled, reasoning that you need the time to prepare for a job search">Go as scheduled, reasoning that you need the time to prepare for a job search</p>
+				<p><input type="radio" name="question3" id="q3_4" value="Extend your vacation, because this might be your last chance to go first-class">Extend your vacation, because this might be your last chance to go first-class</p>
+			</div> 
+			<div class="group_question">
+				<p>4. If you unexpectedly received $20,000 to invest, what would you do?</p>
+				<p><input type="radio" name="question4" id="q4_1" value="Deposit it in a bank account, money market account, or an insured CD">Deposit it in a bank account, money market account, or an insured CD</p>
+				<p><input type="radio" name="question4" id="q4_2" value="Invest it in safe high quality bonds or bond mutual funds">Invest it in safe high quality bonds or bond mutual funds</p>
+				<p><input type="radio" name="question4" id="q4_3" value="Invest it in stocks or stock mutual funds">Invest it in stocks or stock mutual funds</p>
+			</div> 
+			<div class="group_question">
+				<p>5. In terms of experience, how comfortable are you investing in stocks or stock mutual funds?</p>
+				<p><input type="radio" name="question5" id="q5_1" value="Not at all comfortable">Not at all comfortable</p>
+				<p><input type="radio" name="question5" id="q5_2" value="Somewhat comfortable">Somewhat comfortable</p>
+				<p><input type="radio" name="question5" id="q5_3" value="Very comfortable">Very comfortable</p>
+			</div> 
+			<div class="group_question">
+				<p>6. When you think of the word "risk" which of the following comes to mind first?</p>
+				<p><input type="radio" name="question6" id="q6_1" value="Loss">Loss</p>
+				<p><input type="radio" name="question6" id="q6_2" value="Uncertainty">Uncertainty</p>
+				<p><input type="radio" name="question6" id="q6_3" value="Opportunity">Opportunity</p>
+				<p><input type="radio" name="question6" id="q6_4" value="Thrill">Thrill</p>
+			</div> 
+			<div class="group_question">
+				<p>7. Some experts are predicting prices of assets such as gold, jewels, collectibles, and real estate (hard assets) to increase in value; bond prices may fall, however, experts tend to agree that government bonds are relatively safe. Most of your investment assets are now in high-interest government bonds. What would you do?</p>
+				<p><input type="radio" name="question7" id="q7_1" value="Hold the bonds">Hold the bonds</p>
+				<p><input type="radio" name="question7" id="q7_2" value="Sell the bonds, put half the proceeds into money market accounts, and the other half into hard assets">Sell the bonds, put half the proceeds into money market accounts, and the other half into hard assets</p>
+				<p><input type="radio" name="question7" id="q7_3" value="Sell the bonds and put the total proceeds into hard assets">Sell the bonds and put the total proceeds into hard assets</p>
+				<p><input type="radio" name="question7" id="q7_4" value="Sell the bonds, put all the money into hard assets, and borrow additional money to buy more">Sell the bonds, put all the money into hard assets, and borrow additional money to buy more</p>
+			</div> 
+			<div class="group_question">
+				<p>8. Given the best- and worst-case returns of the four investment choices below, which would you prefer?</p>
+				<p><input type="radio" name="question8" id="q8_1" value="$200 gain best case; $0 gain/loss worst case">$200 gain best case; $0 gain/loss worst case</p>
+				<p><input type="radio" name="question8" id="q8_2" value="$800 gain best case; $200 loss worst case">$800 gain best case; $200 loss worst case</p>
+				<p><input type="radio" name="question8" id="q8_3" value="$2,600 gain best case; $800 loss worst case">$2,600 gain best case; $800 loss worst case</p>
+				<p><input type="radio" name="question8" id="q8_4" value="$4,800 gain best case; $2,400 loss worst case">$4,800 gain best case; $2,400 loss worst case</p>
+			</div> 
+			<div class="group_question">
+				<p>9. In addition to whatever you own, you have been given $1,000. You are now asked to choose between:</p>
+				<p><input type="radio" name="question9" id="q9_1" value="A sure gain of $500">A sure gain of $500</p>
+				<p><input type="radio" name="question9" id="q9_2" value="A 50% chance to gain">A 50% chance to gain</p>
+				<p><input type="radio" name="question9" id="q9_3" value="$1,000 and a 50% chance to gain nothing">$1,000 and a 50% chance to gain nothing</p>
+			</div> 
+			<div class="group_question">
+				<p>10. In addition to whatever you own, you have been given $2,000. You are now asked to choose between:</p>
+				<p><input type="radio" name="question10" id="q10_1" value="A sure loss of $500">A sure loss of $500</p>
+				<p><input type="radio" name="question10" id="q10_2" value="A 50% chance to lose ">A 50% chance to lose </p>
+				<p><input type="radio" name="question10" id="q10_3" value="$1,000 and a 50% chance to lose nothing">$1,000 and a 50% chance to lose nothing</p>
+			</div>
+			<div class="group_question">
+				<p>11. Suppose a relative left you an inheritance of $100,000, stipulating in the will that you invest ALL the money in ONE of the following choices. Which one would you select?</p>
+				<p><input type="radio" name="question11" id="q11_1" value="A savings account or money market mutual fund">A savings account or money market mutual fund</p>
+				<p><input type="radio" name="question11" id="q11_2" value="A mutual fund that owns stocks and bonds">A mutual fund that owns stocks and bonds</p>
+				<p><input type="radio" name="question11" id="q11_3" value="A portfolio of 15 common stocks">A portfolio of 15 common stocks</p>
+				<p><input type="radio" name="question11" id="q11_4" value="Commodities like gold, silver, and oil">Commodities like gold, silver, and oil</p>
+			</div>  
+			<div class="group_question">
+				<p>12. If you had to invest $20,000, which of the following investment choices would you find most appealing?</p>
+				<p><input type="radio" name="question12" id="q12_1" value="60% in low-risk investments 30% in medium-risk investments 10% in high-risk investments">60% in low-risk investments 30% in medium-risk investments 10% in high-risk investments</p>
+				<p><input type="radio" name="question12" id="q12_2" value="30% in low-risk investments 40% in medium-risk investments 30% in high-risk investments">30% in low-risk investments 40% in medium-risk investments 30% in high-risk investments</p>
+				<p><input type="radio" name="question12" id="q12_3" value="10% in low-risk investments 40% in medium-risk investments 50% in high-risk investments">10% in low-risk investments 40% in medium-risk investments 50% in high-risk investments</p>
+			</div> 
+			<div class="group_question">
+				<p>13. Your trusted friend and neighbor, an experienced geologist, is putting together a group of investors to fund an exploratory gold mining venture. The venture could pay back 50 to 100 times the investment if successful. If the mine is a bust, the entire investment is worthless. Your friend estimates the chance of success is only 20%. If you had the money, how much would you invest?</p>
+				<p><input type="radio" name="question13" id="q13_1" value="Nothing">Nothing</p>
+				<p><input type="radio" name="question13" id="q13_2" value="One month's salary">One month's salary</p>
+				<p><input type="radio" name="question13" id="q13_3" value="Three month's salary">Three month's salary</p>
+				<p><input type="radio" name="question13" id="q13_4" value="Six month's salary">Six month's salary</p>
+			</div>  
+			<div class="group_question">
+				<p>14. What is your gender?</p>
+				<p><input type="radio" name="question14" id="q14_1" value="Male">Male</p>
+				<p><input type="radio" name="question14" id="q14_2" value="Female">Female</p>
+			</div> 
+			<div class="group_question">
+				<p>15. What is your current age in years?</p>
+				<p><input type="radio" name="question15" id="q15_1" value="25-34">25-34</p>
+				<p><input type="radio" name="question15" id="q15_2" value="35-44">35-44</p>
+				<p><input type="radio" name="question15" id="q15_3" value="45-54">45-54</p>
+				<p><input type="radio" name="question15" id="q15_4" value="55-64">55-64</p>
+				<p><input type="radio" name="question15" id="q15_5" value="65-74">65-74</p>
+				<p><input type="radio" name="question15" id="q15_6" value="75 and over">75 and over</p>
+			</div>
+			<div class="group_question">
+				<p>16. What is your marital status?</p>
+				<p><input type="radio" name="question16" id="q16_1" value="Never married">Never married</p>
+				<p><input type="radio" name="question16" id="q16_2" value="Not married but living with significant other">Not married but living with significant other</p>
+				<p><input type="radio" name="question16" id="q16_3" value="Married">Married</p>
+				<p><input type="radio" name="question16" id="q16_4" value="Separated or Divorced">Separated or Divorced</p>
+				<p><input type="radio" name="question16" id="q16_5" value="Widowed">Widowed</p>
+				<p><input type="radio" name="question16" id="q16_6" value="Shared living arrangement">Shared living arrangement</p>
+			</div>
+			<div class="group_question">
+				<p>17. What is the highest level of education you have completed?</p>
+				<p><input type="radio" name="question17" id="q17_1" value="">Some high school or less High school graduateSome college/trade/vocational training</p>
+				<p><input type="radio" name="question17" id="q17_2" value="Some college/trade/vocational training">Some college/trade/vocational training</p>
+				<p><input type="radio" name="question17" id="q17_3" value="Associate degree">Associate degree</p>
+				<p><input type="radio" name="question17" id="q17_4" value="Bachelors degree">Bachelors degree</p>
+				<p><input type="radio" name="question17" id="q17_5" value="Graduate or professional degree">Graduate or professional degree</p>
+			</div>	
+			<div class="group_question">
+				<p>18. What is your household's approximate annual gross income before taxes?</p>
+				<p><input type="radio" name="question18" id="q18_1" value="Less than $25,000">Less than $25,000</p>
+				<p><input type="radio" name="question18" id="q18_2" value="$25,000 - $49,999">$25,000 - $49,999</p>
+				<p><input type="radio" name="question18" id="q18_3" value="$50,000-$74,999">$50,000-$74,999</p>
+				<p><input type="radio" name="question18" id="q18_4" value="$75,000-$99,999">$75,000-$99,999</p>
+				<p><input type="radio" name="question18" id="q18_5" value="$100,000 or greater">$100,000 or greater</p>
+			</div>
+			<div class="group_question">
+				<p>19. Who is responsible for investment allocation decisions in your household?</p>
+				<p><input type="radio" name="question19" id="q19_1" value="I, and/or someone in my household, make these decisions">I, and/or someone in my household, make these decisions</p>
+				<p><input type="radio" name="question19" id="q19_2" value="I rely on the advise of a professional (e.g., broker, financial planner, or other consultant)">I rely on the advise of a professional (e.g., broker, financial planner, or other consultant)</p>
+				<p><input type="radio" name="question19" id="q19_3"value="I currently have no investment assets">I currently have no investment assets</p>
+			</div>
+			<div class="group_question">
+				<p>20. Some experts are predicting prices of assets such as gold, jewels, collectibles, and real estate (hard assets) to increase in value; bond prices may fall, however, experts tend to agree that government bonds are relatively safe. Most of your investment assets are now in high interest government bonds. What would you do</p>
+				<p><input type="radio" id="q20_1" name="question20" value="1">Hold the bonds</p>
+				<p><input type="radio" id="q20_2" name="question20" value="2">Sell the bonds, put half the proceeds into money market accounts, and the other half into hard assets</p>
+				<p><input type="radio" id="q20_3" name="question20" value="3">Sell the bonds and put the total proceeds into hard assets</p>
+				<p><input type="radio" id="q20_4" name="question20" value="4">Sell the bonds, put all the money into hard assets, and borrow additional money to buy more</p>
+			</div>
+	
+			<div class="group_question">
+				<input type="button"id="button" value="Submit"onclick="check()">
+			</div>
+		</div>
+	<form action="/test" method="POST" id="typewrap">
+		<h1>CONGRATULATIONS</h1>
+		<h1 id="type_say"></h1><br>
+		<img src="" alt="assigned type" id="imagetype">
+		<br>
+		<input type="text" name="type" id="type" value="">
+		<input type="submit" value="Send">
+	</form>
+{% endblock %}

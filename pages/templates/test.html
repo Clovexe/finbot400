@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    
+	<script src="{% static 'js/index.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/home.css'%}">
+{% endblock %}
+{% block content %}
+        
+    {% for items in response%}
+            {% if forloop.counter|add:"-1"|divisibleby:"5" %}
+                <div>---------It is five</div>
+            {% endif %}
+            <div>{{ items.name }}</div>
+            <div>{{ items.price.amount }}</div>
+            <div>{{ items.percent_change }}</div>
+            
+            {% if forloop.counter|divisibleby:"5" %}
+                <div>----------It is end</div>
+            {% endif %}
+    {% endfor %}
+{% endblock %}

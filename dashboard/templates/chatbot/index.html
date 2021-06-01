@@ -1,0 +1,102 @@
+
+{% load static %}
+{% block head %}
+
+<title>Finbot</title>
+<script src="{% static 'js/index.js' %}"></script>
+<link rel="shortcut icon" href="{% static 'images/logo/favicon.png' %}">
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+{% endblock %}
+{% block content %}
+<body onload="goToLastNode()">
+	<nav class="nav">
+  
+    <div> 
+        <a href="{{ obj.get_absolute_url }}">
+            <img src="{% static 'images/home/account_64px.png'%}">
+        </a>
+    </div>
+    <div>
+        <a href="/products/{{ obj.get_username }}"> 
+           <img src="{% static 'images/home/online_store_64px.png'%}">
+        </a>
+     </div>
+     <div>
+        <a href="/sign-up">
+            <img src="{% static 'images/home/accounting_64px.png'%}">
+        </a>
+     </div>   
+        
+ 	</nav>
+	<div class="wrapper">
+	<br>
+		<div class="child1" id="info">
+			<div class="input investorclass">
+				<div class="childinput" > 
+					<img class="imginfo" src="{% static 'images/'%}{{ picture }}.png" >
+				</div>
+				<br>
+				<h1>You are {{ status }} investor</h1>
+				<hr>
+			<h4>{{ description }}</h4>
+			</div>
+			
+			<div class="input recommendations">
+				<h1>Recommendations:</h1>
+				<div class="recomwrapper">
+						<div class="remproduct animated slideInUp">
+							<img src="{% static 'images/chinabank.jpg'%}">
+							<h1>{{ lists.0 }}</h1>
+						</div>
+						<div class="remproduct animated slideInUp">
+							<img src="{% static 'images/chinabank.jpg'%}">
+							<h1>{{ lists.1 }}</h1>
+						</div>
+						<div class="remproduct animated slideInUp">
+							<img src="{% static 'images/'%}chinabank.jpg">
+							<h1>{{ lists.2 }}</h1>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="child2">
+			<div id="chatbox">
+				<h1>Finbot</h1>
+				<div id="chatlogs">
+						<div class="chat friend animated slideInUp fast">
+							<div class="user-photo"><img src="{% static 'images/icon-at.png'%}"alt="Dog"></div>
+							<div class="chat-message">Hello {{ obj.firstname }} !!! I am Finbot your Personal Investing Buddy! Just Type:
+								<br><b>"Where can I start?"</b>: to start Investing Education
+								<br><b>"I want to take Exam"</b>: to The Start the Risk Assessment Test
+								<br><b>"Describe that Company"</b>: to give info about certain company
+							</div>
+						</div>
+						{% for chat in message %}
+							{% if forloop.counter|divisibleby:2 %}
+								<div class="chat friend animated slideInUp fast">
+									<div class="user-photo"><img src="{% static 'images/icon-at.png'%}"alt="Dog"></div>
+									<div class="chat-message">{{ chat|safe}}</div>
+								</div>
+								
+							{% else %}
+								<div class="chat self animated slideInUp fast">
+									<div class="user-photo"><img src="{% static 'images/account_200px.png'%}"alt="Self"></div>
+									<div class="chat-message">{{ chat }}</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+				</div>
+				<div class="chat-form">
+					<form action="{{ obj.username }}" method="POST">
+						{% csrf_token %}
+						<input type="text" name="chat" id="chat">
+						<input type="submit" value="Send">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+{% endblock %}

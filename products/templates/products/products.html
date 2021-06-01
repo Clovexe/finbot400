@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block head %}
+    
+	<script src="{% static 'js/index.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/product.css'%}">
+{% endblock %}
+
+{% block content %}
+<div>
+{% include 'navbar_user.html' %}
+    <h1>List of Products</h1>
+    {% for object in objects %}
+        {% if forloop.counter|add:"-1"|divisibleby:"5" %}
+	    		<div class="wrapper">
+	    {% endif %}
+	    	<div class="product">
+	    		<div><img src="{% static 'images/mcdo.jpg'%}"></div>
+	    		<div>Name: {{ object.name }} </div>
+	    		<div>Price: {{ object.price.currency }} {{ object.price.amount }}</div>
+	    		<div>Percent Change: {{ object.percent_change }}</div>
+	    		<div>Volume: {{ object.volume }}</div>
+	    		<button><a href="buy/{{ object.symbol }}">Buy Stock</a></button>
+	    	</div>
+    	{% if forloop.counter|divisibleby:"5" %}
+	    		</div>
+	    {% endif %}
+	{% endfor %}
+</div>	    
+     
+{% endblock %}

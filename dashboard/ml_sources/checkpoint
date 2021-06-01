@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\ASUS\\Desktop\\Development\\Django\\src\\finbot\\dashboard\\mlsource\\model.tflearn"
+all_model_checkpoint_paths: "C:\\Users\\ASUS\\Desktop\\Development\\Django\\src\\finbot\\dashboard\\mlsource\\model.tflearn"

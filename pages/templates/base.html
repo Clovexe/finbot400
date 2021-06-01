@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Finbot
+        </title>
+        <link rel="shortcut icon" href="{% static 'images/logo/favicon.png' %}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+        {% block head%}
+        {% endblock %}
+    </head>
+    <body>
+       
+        {% block content %}
+
+        {% endblock %}
+        
+    </body>
+</html>

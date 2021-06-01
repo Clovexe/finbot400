@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% include 'navbar_user.html'%}
+     <h1>List of Products</h1>
+     {% for obj in objects %}
+        <h3>{{ obj.title }}</h3>
+        <button>
+            <a href="{{ obj.get_absolute_url }}">Button</a>
+       </button>
+     {% endfor %}
+     
+{% endblock %}

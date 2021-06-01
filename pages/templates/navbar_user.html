@@ -1,0 +1,22 @@
+{% load static %}
+<div class="nav">
+     <div class="nonlogo">
+         <img src="{% static 'images/home/login_as_user_64px.png' %}">
+    </div>
+    <div class="nonogo"> 
+        <a href="/dashboard/{{ username }}">
+            <img src="{% static 'images/home/account_64px.png'%}">
+        </a>
+    </div>
+    <div class="nonogo">
+        <a href="/products/{{ username }}"> 
+           <img src="{% static 'images/home/online_store_64px.png'%}">
+        </a>
+     </div>
+     <div class="nonogo">
+        <a href="/finchat/{{ username }}">
+            <img src="{% static 'images/home/accounting_64px.png'%}">
+        </a>
+     </div>   
+        
+</div>

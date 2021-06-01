@@ -1,0 +1,75 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block head %}
+    <script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'js/update.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/update.css'%}">
+
+{% endblock %}
+
+{% block content %}
+<div>
+    {% include 'navbar_user.html'%}
+  <div class="wrapper">
+        <div class="panel">
+            <h4>MANAGEMENT</h4>
+            <div id="profile"class="sidebar active">
+                <a href="{{ obj.get_absolute_url }}">
+                    <i class="fas fa-address-card"></i>
+                    <span>Profile</span>
+                </a>
+            </div>
+            <div id="update" class="sidebar">
+                <a href="{{ obj.get_absolute_url_update }}">
+                    <i class="fas fa-pen-alt"></i>
+                    <span>Update Profile</span>
+                </a>
+            </div>
+            <h4>SECURITY</h4>
+            <div id="password" class="sidebar">
+                <a href="{{ obj.get_absolute_url_security }}">
+                    <i class="fas fa-user-shield"></i>
+                    <span>Credentials</span>
+                </a>
+            </div>
+            <h4>TRANSACTIONS</h4>
+            <div id="product" class="sidebar">
+                <i class="fab fa-product-hunt"></i>
+                <span>Products</span>
+            </div>
+        </div>
+        <div id="profile_panel" class="inside">
+            <div class="child">
+                <h1>Profile</h1>
+                <h3>Name: {{ obj.firstname }}  {{ obj.lastname }}</h3>
+                <h3>User: {{ obj.username }}  </h3>
+                <h3>Email: {{ obj.email }}  </h3>
+                <h3>Contact: 0{{ obj.contact }}  </h3>
+                <h3>Investing Style: {{ status }}  </h3>
+                <h1>About You</h1>
+                <p>
+                    {{ obj.about }}
+                </p>
+            </div>
+            <div class="child">
+                <img src="{% static 'images/logo/hello.svg' %}">
+            </div>
+        </div>
+        <div id="product_panel" class="inside hidden">
+            <div >
+                <h1>Products</h1>
+                <h3>Name: {{ obj.firstname }}  {{ obj.lastname }}</h3>
+                <h3>User: {{ obj.username }}  </h3>
+                <h3>Email: {{ obj.email }}  </h3>
+                <h3>Contact: 0{{ obj.contact }}  </h3>
+                <h3>Investing Style: {{ status }}  </h3>
+                <h1>About You</h1>
+                <p>
+                    {{ obj.about }}
+                </p>
+            </div>
+            
+        </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block head %}
+   <script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
+   <script src="{% static 'js/buy.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/productbuy.css'%}">
+{% endblock %}
+
+{% block content %}
+<div>
+{% include 'navbar_user.html' %}
+   <div class="wrapper">
+   		<div class="inside">
+   			<div class="parent">
+   				<div class="child1">
+   					<img id="yow" src="{% static 'images/mcdo.jpg'%}">	
+   				</div>
+   				<div class="child2">
+   					<h1>Company Name: {{ object.name }}</h1>
+   					<h2 id="price">Price: {{ object.price.amount }}</h2>
+   					<h2>Percent Change: {{ object.percent_change }}</h2>
+   					<h2>Volume: {{ object.volume }}</h2>
+   				</div> 
+   			</div>  		
+   			<form>
+   				<label>{{ object.price.currency }}</label><input id="value" type="number" name="" readonly="readonly"><br>
+   				<label>Units</label><input id="units" type="number" name="" >
+   				<input type="range" id="range" name="" min="0" max="100000" value="0"><br>
+   				<input type="submit" name="submit" value="BUY">
+   			</form>
+   		</div>	
+
+   </div>
+</div>
+{% endblock %}
